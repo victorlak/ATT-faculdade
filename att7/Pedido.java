@@ -15,6 +15,14 @@ public class Pedido {
     private String codigo;
     private Cliente cliente;
     private List<Produto> compra = new ArrayList<>();
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
     
     public void addProduto(Produto produto){
         compra.add(produto);
