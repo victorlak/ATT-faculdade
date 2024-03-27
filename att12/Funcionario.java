@@ -55,6 +55,9 @@ public class Funcionario {
     public void setProjetos(List<Projeto> projetos) {
         this.projetos = projetos;
     }
+    public int numerosDeProjetos(){
+        return projetos.size();
+    }
 
     @Override
     public String toString() {
