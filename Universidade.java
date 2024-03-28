@@ -42,7 +42,7 @@ public class Universidade {
         return cursoComMaisAlunos;
     }
     public List<Curso> cursosMaisMatriculados(){
-        List<Curso> aux = cursosDisponiveis;
+        List<Curso> aux = new ArrayList<>(cursosDisponiveis);
         List<Curso> topCincoCursos = new ArrayList<>();
         Curso curso = new Curso();
         int controle = 0;
