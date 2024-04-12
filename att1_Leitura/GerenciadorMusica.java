@@ -14,7 +14,11 @@ public class GerenciadorMusica {
             musicas.remove(nome);
     }
     public void salvarNoArquivo(String caminhoDoArquivo) {
-        
+        SerializadorMusica serializa = new SerializadorMusica();
+        String textoSeraSalvo = serializa.paraCSV()
+
+        chama o filePersistence para salvar;
+        filePersistence.saveToFile(textoSeraSalvo, "texto.csv");
     }
 
     public void carregarDoArquivo(String caminhoDoArquivo) {
